@@ -1,0 +1,433 @@
+.bgDark {
+  color: $light-color;
+  background-color: #000;
+}
+.s22Title {
+  background-color: #000;
+  width: 100%;
+  height: 100%;
+  padding-top: 5rem;
+  overflow: hidden;
+color: $light-color;
+  .texts {
+    padding-left: 5rem;
+    .miniTitle {
+      font-size: 20px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      .icon {
+        width: 20px;
+        height: 20px;
+        color: $light-color;
+        background-color: $dark-color;
+        border-radius: 50%;
+        font-size: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 5px;
+      }
+    }
+    .lgTitle {
+      font-size: 85px;
+      width: 40%;
+      font-weight: 900;
+      margin: 2rem 0;
+    }
+    .mdTitle {
+      font-size: 50px;
+      font-weight: 600;
+    }
+  }
+  .image {
+    margin-top: 10rem;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    .heroImage {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+}
+// *********************************
+.s22frontCamera {
+  padding-top: 5rem;
+  .desc {
+    width: 40%;
+    margin-left: auto;
+    padding: 2rem 5rem;
+    color: $light-color;
+  }
+  .front {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 3.5rem;
+      left: 28rem;
+      right: 0;
+      height: 1px;
+      width: 45%;
+      background-color: $light-color;
+    }
+    .text {
+      padding-left: 20rem;
+      padding-top: 1rem;
+      .pixels {
+        font-size: 40px;
+        font-weight: bold;
+      }
+      .cameraText {
+        font-size: 16px;
+        opacity: 0.7;
+      }
+    }
+    .image {
+      overflow: hidden;
+      width: 50%;
+      position: relative;
+      height: auto;
+    }
+  }
+}
+
+// ***************************************************************
+.backCamera {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5vw;
+  position: relative;
+  overflow: auto;
+  .image {
+    overflow: hidden;
+    width: 50%;
+    position: relative;
+    // height: 80vh;
+  }
+  .texts {
+    z-index: 3;
+    padding-left: 20%;
+    padding-top: 7vw;
+    .camera {
+      margin-bottom: 6vw;
+      .title {
+        font-size: 26px;
+        font-weight: 600;
+      }
+      .text {
+        font-size: 16px;
+        opacity: 0.7;
+      }
+    }
+    .camera1 {
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        left: 11vw;
+        top: 1vw;
+        width: 29vw;
+        height: 1px;
+        background-color: $light-color;
+      }
+    }
+    .camera2 {
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        left: 11vw;
+        top: 1vw;
+        width: 29vw;
+        border-top: 1px solid $light-color;
+      }
+    }
+    .camera3 {
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        left: 11vw;
+        top: 1vw;
+        width: 29vw;
+        border-bottom: 1px solid $light-color;
+      }
+      .camera4title {
+        width: 60%;
+      }
+    }
+  }
+}
+// *********************************
+@media (max-width: $xl-size) {
+  .s22Title {
+    .texts {
+      .lgTitle {
+        width: 50%;
+      }
+    }
+  }
+  .s22frontCamera {
+    .desc {
+      width: 50%;
+    }
+    .front {
+      &::after {
+        left: 20rem;
+        width: 57%;
+      }
+      .text {
+        padding-left: 10rem;
+        .pixels {
+          font-size: 30px;
+          padding-top: 1rem;
+        }
+        .cameraText {
+          font-size: 16px;
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+  .backCamera {
+    .texts {
+      padding-left: 10%;
+      .camera {
+        margin-bottom: 5vw;
+      }
+      .camera1,
+      .camera2,
+      .camera3 {
+        &::after {
+          left: 12vw;
+          width: 38vw;
+        }
+      }
+    }
+  }
+}
+
+.samsungLinks {
+  padding: 10rem 0;
+}
+
+@media (max-width: $lg-size) {
+  .s22Title {
+    .texts {
+      .miniTitle {
+        font-size: 18px;
+        .icon {
+          width: 15px;
+          height: 15px;
+          font-size: 10px;
+        }
+      }
+      .lgTitle {
+        font-size: 70px;
+        width: 60%;
+      }
+      .mdTitle {
+        font-size: 40px;
+      }
+    }
+  }
+  .s22frontCamera {
+    .desc {
+      width: 70%;
+    }
+    .front {
+      &::after {
+        top: 1.7rem;
+        left: 10rem;
+        width: 55vw;
+      }
+      .text {
+        padding-left: 5rem;
+        .pixels {
+          padding-top: 0;
+          font-size: 20px;
+        }
+        .cameraText {
+          font-size: 14px;
+        }
+      }
+      .image {
+        img {
+          width: 50vw;
+        }
+      }
+    }
+  }
+  .backCamera {
+    .texts {
+      .camera {
+        margin-bottom: 5vw;
+        .title {
+          font-size: 20px;
+        }
+        .text {
+          font-size: 12px;
+        }
+      }
+      .camera1,
+      .camera2,
+      .camera3 {
+        &::after {
+          left: 15vw;
+          width: 35vw;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $md-size) {
+  .s22Title {
+    .texts {
+      .lgTitle {
+        font-size: 50px;
+      }
+      .mdTitle {
+        font-size: 30px;
+      }
+    }
+  }
+  .s22frontCamera {
+    height: auto;
+    .desc {
+      width: 80%;
+    }
+    .front {
+      &::after {
+        top: 1.5rem;
+        width: 50vw;
+      }
+    }
+  }
+  .backCamera {
+    .texts {
+      .camera {
+        margin-bottom: 4vw;
+        .title {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .s22frontCamera {
+    .desc {
+      width: 80%;
+    }
+    .front {
+      &::after {
+        top: 1.5rem;
+        width: 46vw;
+      }
+    }
+  }
+  .backCamera {
+    .texts {
+      .camera {
+        margin-bottom: 3.5vw;
+        .title {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .s22Title {
+    .texts {
+      .lgTitle {
+        font-size: 40px;
+      }
+      .mdTitle {
+        font-size: 20px;
+      }
+    }
+  }
+  .s22frontCamera {
+    .desc {
+      width: 80%;
+      padding: 0;
+      margin: 2rem auto;
+    }
+    .front {
+      &::after {
+        top: 1rem;
+        width: 40vw;
+      }
+      .text {
+        padding-top: 0;
+      }
+    }
+  }
+  .backCamera {
+    .texts {
+      .camera {
+        margin-bottom: 3.5vw;
+        .title {
+          font-size: 14px;
+        }
+        .text {
+          font-size: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .s22Title {
+    .texts {
+      padding: 2rem;
+      .lgTitle {
+        font-size: 35px;
+      }
+      .mdTitle {
+        font-size: 18px;
+      }
+    }
+  }
+  .s22frontCamera {
+    .front {
+      .text {
+        padding-left: 2rem;
+        .pixels {
+          font-size: 14px;
+        }
+        .cameraText {
+          font-size: 10px;
+        }
+      }
+      &::after {
+        left: 25vw;
+        top: 0.7rem;
+        width: 50vw;
+      }
+    }
+  }
+  .backCamera {
+    .texts {
+      .camera {
+        margin-bottom: 2.5vw;
+        .title {
+          font-size: 12px;
+        }
+        .text {
+          font-size: 10px;
+        }
+      }
+    }
+  }
+}

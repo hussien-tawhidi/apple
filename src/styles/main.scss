@@ -1,0 +1,173 @@
+@import "./commonStyle";
+@import "./allFilesImport";
+
+html,
+body {
+  background: #fff;
+}
+*,
+*::after,
+*::before,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.home-container {
+  margin-top: 45px;
+  position: relative;
+  z-index: 50;
+}
+.buyNow {
+  color: $blue-color;
+  padding: 15px 20px;
+  border-radius: 30%;
+  font-size: 20px;
+  text-transform: capitalize;
+  margin-right: 1rem;
+  cursor: pointer;
+
+  &.bgBlue {
+    background-color: $blue-color;
+    color: $light-color;
+    opacity: 1;
+  }
+}
+.more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $blue-color;
+  text-transform: capitalize;
+  font-size: 20px;
+  padding: 10px 5px;
+
+  .icon {
+    font-size: 14px;
+    font-weight: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0 0 0;
+    margin-left: 5px;
+  }
+  &:hover {
+    text-decoration: underline;
+  }
+}
+.mainContant {
+  margin-top: 45px;
+}
+
+#app {
+  height: 100%;
+}
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-button-next {
+  background-image: url("../../public/arrow.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+}
+
+.swiper-button-next::after {
+  display: none;
+}
+.swiper-button-prev {
+  background-image: url("../../public/arrowLeft.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+}
+
+.swiper-button-prev::after {
+  display: none;
+}
+.dailyOff {
+  text-align: center;
+ background-color: $dark-color;
+  padding: 10px;
+  color: $light-color;
+  p {
+    font-size: 12px;
+  }
+  a {
+    color: $blue-color;
+    text-transform: capitalize;
+  }
+}
+
+.huawie {
+  background-color: $light-color;
+}
+@media (max-width: $md-size) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    background-size: 50% auto;
+  }
+}
+
+.airPodSlide {
+  margin: 4rem 0;
+}
+.hotsell {
+  font-size: 30px;
+  font-weight: 900;
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+  color: $dark-color;
+}
+.watchesPara{
+  background-color: $light-color;
+  padding: 1.5rem 0 ;
+}
